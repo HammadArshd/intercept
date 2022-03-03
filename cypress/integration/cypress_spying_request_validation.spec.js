@@ -22,8 +22,8 @@ describe('intercept demo', () => {
         
         cy.wait('@loginAPI').then(($login) => {
             let payload = $login.request.body;
-            expect(payload.username, 'username matched').to.eq(username);
-            expect(payload.password, 'password matched').to.eq(password);
+            expect(payload.username, 'username matched').to.eq(users[0].username);
+            expect(payload.password, 'password matched').to.eq(users[0].password);
         });
     });
 });

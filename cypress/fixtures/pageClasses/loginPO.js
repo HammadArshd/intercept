@@ -3,3 +3,5 @@ const loginPO = {
     loginPasswordField: '[data-testid=login_passwordInput_input]',
     loginBtn: '[data-testid=login_cta]',
 };
+
+export default loginPO;
