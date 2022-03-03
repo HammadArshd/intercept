@@ -1,11 +1,11 @@
 import * as loginPO from './loginPO';
 
 export function typeInPhone(data) {
-    cy.get(loginPO.loginPhoneNumberInput).type(data);
+    cy.get(loginPO.loginPhoneNumberField).type(data);
 }
 
 export function typeInPassword(data) {
-    cy.get(loginPO.loginPhoneNumberInput).type(data);
+    cy.get(loginPO.loginPasswordField).type(data);
 }
 
 export function clickLoginBtn() {

@@ -17,6 +17,8 @@ describe('intercept demo', () => {
 
         apiHandler.interceptLoginApi();
 
+        loginCC.clickLoginBtn();
+
         
         cy.wait('@loginAPI').then(($login) => {
             let payload = $login.request.body;
