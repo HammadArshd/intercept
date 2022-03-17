@@ -1,0 +1,1 @@
+export const url = 'https://host-staging.almosafer.com/mweb/account/login?lang=en';
